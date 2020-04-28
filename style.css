@@ -1,0 +1,187 @@
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+body{
+        background: rgb(128, 72, 0);
+    }
+hr{
+  display: none;
+}    
+h1{ 
+    text-align: center;
+    font-size: 48px;
+    position: absolute;
+    top: 70px;
+    left: 640px;
+    color: yellow;
+}
+.info{
+    position: absolute;
+    text-align: center;
+    top: 50px;
+    left: 95px;
+}
+.player {
+    margin: 250px auto;
+    width: 380px;
+    height: 200px;
+    border: 3px solid blue;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-wrap: wrap;
+    box-shadow: 0 0 5px 5px blue;
+    border-radius: 10px;
+    background-color: darkcyan;
+}
+
+.player p {
+    width: 100%;
+    margin: 10px;
+    text-align: center;
+}
+
+p span:first-child {
+    font-weight: bolder;
+    align-items: center;
+}
+button {
+    margin-bottom: 48px;
+    margin-left: 20px;
+    border: 1px rgb(0, 0, 0);
+    outline: none;
+    background-color: blue;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    box-shadow: 0 0 10px 1px;
+}
+.stop{
+    position: absolute;
+    top: 105px;
+    left: 80px;
+}
+.play{
+    position: relative;
+    left: 0px;
+}
+.pause{
+    position: relative;
+    left: 5px;
+}
+.play i,
+.pause i {
+    font-size: 62px;
+}
+
+.stop i{
+    font-size: 42px;
+}
+
+.pause {
+    display: none;
+}
+.play:hover{
+    cursor: pointer;
+    background-color: green;
+}
+.pause:hover{
+    cursor: pointer;
+    background-color: yellow;
+}
+.stop:hover{
+    cursor: pointer;
+    background-color: red;
+}
+
+.slidecontainer {
+    width: 100%; 
+}
+
+
+.volume{
+    position: absolute;
+    left: 190px;
+    top: 170px;
+    border-radius: 5px;
+    -webkit-appearance: none;  
+    appearance: none;
+    width: 40%; 
+    height: 5px;
+    background: blue; 
+    outline: none; 
+    opacity: 0.7; 
+    -webkit-transition: .2s; 
+    transition: opacity .2s;
+}
+
+
+.volume:hover {
+    opacity: 1; 
+    background: yellow;
+}
+.volume::-webkit-slider-thumb:hover{
+    background: green;
+}
+
+.volume::-webkit-slider-thumb {
+    border-radius: 50%; 
+    -webkit-appearance: none; 
+    appearance: none;
+    width: 20px; 
+    height: 22px; 
+    background: red; 
+    cursor: pointer; 
+}
+.volume::-moz-range-thumb {
+    width: 25px; 
+    height: 25px; 
+    background: #4CAF50; 
+    cursor: pointer; 
+    border-radius: 50%;
+}
+
+.vlicon{
+    font-size: 32px;
+    position: absolute;
+    left: 242px;
+    top: 115px;
+}
+.plus{
+    position: absolute;
+    font-size: 30px;
+    left: 345px;
+    top: 156px;
+    font-weight: bold;
+}
+.minus{
+    position: absolute;
+    font-size: 42px;
+    left: 168px;
+    top: 144px;
+    font-weight: bold;
+}
+.label1{
+    position: absolute;
+    left: 35px;
+    top: 160px;
+    font-weight: bold;
+}
+.label2{
+    position: absolute;
+    left: 105px;
+    top: 160px;
+    font-weight: bold;
+}
+.label3{
+    position: absolute;
+    left: 35px;
+    top: 160px;
+    font-weight: bold;
+    display: none;
+}
+

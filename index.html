@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Music player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div>
+        <h1>Music Player</h1>
+    </div>
+    <div class="player">
+        <p>Now playning:  <span class="performer"></span>-<span class="song"></span> <hr> <span class="info">Bitrate: 160 kbps Time: 3:45</span></p>
+       <div class="vlicon"><i class="fas fa-volume-up"></i>
+       </div>
+        <div class="container">
+            <input type="range" class="volume" min="1" max="100" value="100" step="1" id="volume">
+          </div>
+          <span class="plus">+</span>
+          <span class="minus">-</span>
+        <button type="button" class="play"><i class="far fa-play-circle"></i></button>
+        <label class="label1" for="play">Play</label>
+        <button type="button" class="pause"><i class="far fa-pause-circle"></i></button>
+        <label class="label3" for="pause">Pause</label>
+        <button type="button" class="stop"><i class="far fa-stop-circle"></i></button>
+        <label class="label2" for="stop">Stop</label>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
